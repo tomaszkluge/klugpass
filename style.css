@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* For browsers that do not support gradients */
+    /*background-image: linear-gradient(to bottom right, black, lightblue);*/
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+  }
+
+  .header h1 {
+    display: flex;
+    text-align: center;
+  }
+
+  form {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form > * {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+  }
+  
+ 
+
+  .btn {
+    position: relative;
+    background-color: #4caf4f90;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .btn:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  #password-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  

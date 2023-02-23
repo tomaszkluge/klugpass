@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Password Generator created by KLUGCODE.DEV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="https://klugcode.dev" target="_blank"><img src="logo.png" width="200px" height="200px" /></a>
+    <h1>Password Generator</h1>
+  </header>
+  <form id="password-form">
+    <div>
+      <label for="length">Password length:</label>
+      <input type="number" id="length" name="length" min="1" max="64" value="10" required>
+    </div>
+    <div>
+      <input type="checkbox" id="use-digits" name="use-digits" checked>
+      <label for="use-digits">Use numbers</label>
+    </div>
+    <div>
+      <input type="checkbox" id="use-letters" name="use-letters" checked>
+      <label for="use-letters">Use letters</label>
+    </div>
+    <div>
+      <input type="checkbox" id="use-symbols" name="use-symbols" checked>
+      <label for="use-symbols">Use symbols</label>
+    </div>
+    <button class="btn" type="submit">Generate password</button>
+    <div id="password-container"></div>
+  </form>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
