@@ -14,18 +14,22 @@ body {
     color: whitesmoke;
     height: 100vh;
   }
-  
-  .header {
-    display: flex;
+
+  .img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
   }
 
-  .header h1 {
-    display: flex;
-    text-align: center;
+  @media only screen and (max-width: 400px)  {
+  .img {
+    width: 150px;
+    height: 150px;
   }
+}
 
   form {
-    margin: 0 auto;
+    margin-left: 10px;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -83,12 +87,7 @@ body {
   }
   
   #password-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: center;
-    font-size: 1.5em;
+    margin-left: 10px;
+    font-size: 1.3em;
   }
   
