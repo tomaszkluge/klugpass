@@ -52,7 +52,7 @@ body {
 
   .btn {
     position: relative;
-    background-color: #4caf4f90;
+    background-color: #ae07077a;
     border: none;
     font-size: 18px;
     color: #FFFFFF;
@@ -66,6 +66,11 @@ body {
     border-radius: 10px;
   }
 
+  #copy {
+    background-color: #07ae0a7d;
+    /*visibility: hidden;*/
+  }
+  
   .btn:after {
     content: "";
     background: #f1f1f1;
