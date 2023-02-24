@@ -52,5 +52,8 @@ const copyButton = document.getElementById('copy');
 
 generateButton.addEventListener('click', function() {
   copyButton.innerHTML = 'Copy password';
+  copyButton.style.visibility = 'visible';
 });
+
+
 
