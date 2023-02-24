@@ -36,7 +36,7 @@ form.addEventListener("submit", (event) => {
   };
   const password = generatePassword(formData);
   passwordContainer.textContent = password;
-}); 
+});
 
 function copyPass() {
   const textToCopy = document.getElementById("password-container").innerHTML;
@@ -48,12 +48,9 @@ function copyPass() {
 }
 
 const generateButton = document.querySelector('button[type="submit"]');
-const copyButton = document.getElementById('copy');
+const copyButton = document.getElementById("copy");
 
-generateButton.addEventListener('click', function() {
-  copyButton.innerHTML = 'Copy password';
-  copyButton.style.visibility = 'visible';
+generateButton.addEventListener("click", function () {
+  copyButton.innerHTML = "Copy password";
+  copyButton.style.visibility = "visible";
 });
-
-
-

@@ -91,7 +91,7 @@ input[type="number"] {
 
 #copy {
   background-color: #07ae0a7d;
-  visibility: hidden
+  visibility: hidden;
 }
 
 .btn:after {
