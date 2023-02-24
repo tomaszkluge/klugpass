@@ -1,98 +1,111 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: black; /* For browsers that do not support gradients */
-    /*background-image: linear-gradient(to bottom right, black, lightblue);*/
-    background-image: url(bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: whitesmoke;
-    height: 100vh;
-  }
+  font-family: Arial, sans-serif;
+  background-color: black; /* For browsers that do not support gradients */
+  /*background-image: linear-gradient(to bottom right, black, lightblue);*/
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  height: 100vh;
+}
 
-  .img {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-  }
+.coffee {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
 
-  @media only screen and (max-width: 400px)  {
+.img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
   .img {
     width: 150px;
     height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .coffee {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-  form {
-    margin-left: 10px;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form > * {
-    margin: 10px 0;
-  }
-  
-  label {
-    display: inline-block;
-    width: 150px;
-  }
-  
-  input[type="number"] {
-    width: 50px;
-  }
-  
- 
+form {
+  margin-left: 10px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .btn {
-    position: relative;
-    background-color: #ae07077a;
-    border: none;
-    font-size: 18px;
-    color: #FFFFFF;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 10px;
-  }
+form > * {
+  margin: 10px 0;
+}
 
-  #copy {
-    background-color: #07ae0a7d;
-    /*visibility: hidden;*/
-  }
-  
-  .btn:after {
-    content: "";
-    background: #f1f1f1;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  
-  .btn:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
-  
-  #password-container {
-    margin-left: 10px;
-    font-size: 1.3em;
-  }
-  
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+.btn {
+  position: relative;
+  background-color: #ae07077a;
+  border: none;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#copy {
+  background-color: #07ae0a7d;
+  /*visibility: hidden;*/
+}
+
+.btn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+#password-container {
+  margin-left: 10px;
+  font-size: 1.3em;
+}
