@@ -56,12 +56,21 @@ form > * {
 }
 
 label {
-  display: inline-block;
-  width: 150px;
+  font-weight: bold;
+}
+
+#length {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: #ffffff 1px solid;
+  margin-left: 5px;
+  padding: 2px;
 }
 
 input[type="number"] {
-  width: 50px;
+  width: 40px;
 }
 
 .btn {
