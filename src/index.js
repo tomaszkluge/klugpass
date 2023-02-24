@@ -47,3 +47,10 @@ function copyPass() {
   });
 }
 
+const generateButton = document.querySelector('button[type="submit"]');
+const copyButton = document.getElementById('copy');
+
+generateButton.addEventListener('click', function() {
+  copyButton.innerHTML = 'Copy password';
+});
+
