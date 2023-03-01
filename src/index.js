@@ -43,7 +43,7 @@ function copyPass() {
 
   navigator.clipboard.writeText(textToCopy).then(() => {
     const copyButton = document.getElementsByTagName("button")[1];
-    copyButton.innerHTML = "Done!";
+    copyButton.innerHTML = "Password copied!";
   });
 }
 
